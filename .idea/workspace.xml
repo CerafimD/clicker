@@ -4,10 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7190d88c-3aa5-44c1-bb08-22db8caf735d" name="Changes" comment="init commit 2">
-      <change afterPath="$PROJECT_DIR$/auth_clicker/forms.py" afterDir="false" />
+    <list default="true" id="7190d88c-3aa5-44c1-bb08-22db8caf735d" name="Changes" comment="added DRM in auth_clicker">
+      <change afterPath="$PROJECT_DIR$/backend/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/static/js/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth_clicker/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/static/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/djangoProject1/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject1/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoProject1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject1/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/registration.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +28,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -38,6 +46,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Django Server.djangoProject1.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -50,6 +59,15 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\danil\PycharmProjects\djangoProject1\frontend" />
+      <recent name="C:\Users\danil\PycharmProjects\djangoProject1" />
+      <recent name="C:\Users\danil\PycharmProjects\djangoProject1\auth_clicker" />
+      <recent name="C:\Users\danil\PycharmProjects\djangoProject1\auth_clicker\templates" />
+      <recent name="C:\Users\danil\PycharmProjects\djangoProject1\templates" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="djangoProject1" type="Python.DjangoServer" factoryName="Django server">
       <module name="djangoProject1" />
@@ -58,6 +76,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="djangoProject1.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -93,6 +112,9 @@
       <updated>1711991229050</updated>
       <workItem from="1711991285198" duration="631000" />
       <workItem from="1712380646233" duration="2615000" />
+      <workItem from="1712406847741" duration="4394000" />
+      <workItem from="1712412885637" duration="704000" />
+      <workItem from="1713621247760" duration="4285000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -118,15 +140,35 @@
       <option name="project" value="LOCAL" />
       <updated>1711993414556</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added DRM in auth_clicker">
+      <option name="closed" value="true" />
+      <created>1712412751379</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1712412751379</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init commit" />
     <MESSAGE value="init commit 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="init commit 2" />
+    <MESSAGE value="added DRM in auth_clicker" />
+    <option name="LAST_COMMIT_MESSAGE" value="added DRM in auth_clicker" />
   </component>
 </project>
