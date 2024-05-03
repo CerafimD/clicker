@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script type="text/javascript" src = "{% static 'js/index.js' %}"></script>
+     <meta charset="utf-8">
+    <title>клик ер</title>
+  </head>
+  <body>
+
+
+      <main class = "app">
+      <nav class="nav"><h3> Welcome, {{user.username}}! </h3>
+
+      <div class="logout"><a href="/logout">Выйти</a></div>
+      </nav>
+     <div class="container">
+        <div id='coins'>{{ core.coins }}</div>
+         <button onclick="call_click()">Кнопка</button>
+
+         <p>
+             МОЩЬ клика: <span id="click_power">{{ core.click_power }}</span>
+         </p>
+    </div>
+          <aside class="boosts" id="boosts">
+              <h3>Бусты</h3>
+              <div class="boosts-holder" id="boosts-holder">
+                  {% for boost in boosts %}
+                    <button class="boost" id="boost_{{boost.id}}" onclick="buy_boost({{boost.id}})">
+                  <p>lvl:<span id="boost_level">{{ boost.lvl }}</span></p>
+                  <p>+<span id="boost_power">{{ boost.power }}</span></p>
+                  <p><span id="boost_price">{{ boost.price }}</span></p>
+                    </button>
+                  {%  endfor %}
+              </div>
+          </aside>
+      </main>
+  </body>
+</html>
