@@ -12,30 +12,38 @@
 
 
       <main class = "app">
-      <nav class="nav"><h3> Welcome, {{user.username}}! </h3>
+      <nav class="nav"><p class="title">НАСКОЛЬКО СИЛЬНО ВЫ ЛЮБИТЕ САУНДВЕЙВА(конкретно из трансформеров прайм)</p>
 
       <div class="logout"><a href="/logout">Выйти</a></div>
       </nav>
      <div class="container">
-        <div id='coins'>{{ core.coins }}</div>
-         <button onclick="call_click()">Кнопка</button>
+         <div class="center">Накопленная любовь</div>
+         <div class="center" id='coins' >{{ core.coins }} </div>
 
-         <p>
-             МОЩЬ клика: <span id="click_power">{{ core.click_power }}</span>
+         <button onclick="call_click()" id ="kakashi" class="soundwave"><img class="center" src="{% static 'soundwave.png' %}" alt="My image" >
+             </button>
+             <p class="stat-text">
+             МОЩЬ любви: <span id="click_power">{{ core.click_power }}</span>
          </p>
-    </div>
-          <aside class="boosts" id="boosts">
-              <h3>Бусты</h3>
-              <div class="boosts-holder" id="boosts-holder">
+         <p class="stat-text">
+     пассивное восхищение <span id="auto_click_power">{{ core.auto_click_power }}</span>
+</p>
+
+         <aside class="boosts" id="boosts">
+              <h3>Купить игрушки саундвейва</h3>
+              <div class="" id="boosts-holder">
                   {% for boost in boosts %}
-                    <button class="boost" id="boost_{{boost.id}}" onclick="buy_boost({{boost.id}})">
-                  <p>lvl:<span id="boost_level">{{ boost.lvl }}</span></p>
+              <button class="boost_{{boost.type}}" id="boost_{{boost.id}}" role="button" onclick="buy_boost({{boost.id}})">
+                  <p>lvl:<span id="boost_level"> {{ boost.lvl }}</span></p>
                   <p>+<span id="boost_power">{{ boost.power }}</span></p>
                   <p><span id="boost_price">{{ boost.price }}</span></p>
                     </button>
                   {%  endfor %}
               </div>
           </aside>
+
+    </div>
+
       </main>
   </body>
 </html>

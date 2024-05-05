@@ -1,9 +1,11 @@
 header{
     background-color: darkcyan;
-    color: white;
+    color: indigo;
     height: 100px;
 }
-
+body{
+    color:yellow;
+}
 h3{
     text-align: center;
     vertical-align: middle;
@@ -11,22 +13,87 @@ h3{
 }
 
 main{
+    background-color: indigo;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
 .logout{
     position: relative;
-    text-align:center;
+    text-align:right;
     color: white;
 }
 
 .logout a {
-    color: rgb(209, 209, 209);
     font-size: larger;
+    color: white;
 }
 
 .logout a:hover{
-    color: white;
     text-decoration: none;
+}
+.boost_1{
+
+}
+
+
+.soundwave {
+   display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+button img{
+margin-right: auto;
+  border: 1px solid red;
+}
+button p{
+    border: 1px solid red;
+  margin-right: auto;
+}
+
+.title{
+    text-align: center;
+    color: yellow;
+}
+.app{
+    color:yellow;
+}
+.coins{
+    text-align: center;
+}
+.center{
+    text-align: center;
+    position: relative;
+}
+
+boosts{
+    display: flex;
+}
+/* CSS */
+.boost_1 {
+  border-radius: 8px;
+  border-width: 0;
+  color: #333333;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 10px 12px;
+  text-align: center;
+  transition: all 200ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.stat-text{
+    display: flex;
+
 }
